@@ -1,5 +1,5 @@
-module Braun(input[3:0] A,B, input C, output Cout, output [9:0] S)
-wire C[9:0], iS[9:0];
+module Braun(input[3:0] A,B, input C, output Cout, output [9:0] S);
+  wire C[11:0], iS[10:0];
 assign S[0] = A[0]&&B[0];
 fa f1(A[0]&&B[1],A[1]&&B[0],0,C[0],S[1]);
 fa f2(A[2]&&B[0],A[1]&&B[1],0,C[1],iS[0]);
